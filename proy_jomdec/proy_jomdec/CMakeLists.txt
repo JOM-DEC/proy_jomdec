@@ -1,4 +1,6 @@
+Estos dos ficheros contendrán las dependencias al resto de paquetes:
+- CMakeLists.txt
 cmake_minimum_required(VERSION3.5)
- project(proy_jomdec)
- find_package(ament_cmake REQUIRED)
- ament_package()
+project(proy_jomdec) find_package(ament_cmake
+REQUIRED)
+ament_package()
