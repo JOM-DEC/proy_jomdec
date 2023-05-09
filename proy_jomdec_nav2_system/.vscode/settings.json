@@ -1,0 +1,12 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/jorge/jorge/turtlebot3_ws/install/proy_jomdec_nav2_system/lib/python3.8/site-packages",
+        "/home/jorge/install/my_nav2_system/lib/python3.8/site-packages",
+        "/opt/ros/galactic/lib/python3.8/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/jorge/jorge/turtlebot3_ws/install/proy_jomdec_nav2_system/lib/python3.8/site-packages",
+        "/home/jorge/install/my_nav2_system/lib/python3.8/site-packages",
+        "/opt/ros/galactic/lib/python3.8/site-packages"
+    ]
+}
