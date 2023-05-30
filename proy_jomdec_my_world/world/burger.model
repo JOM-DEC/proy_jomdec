@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <sdf version="1.6">
-  <world name="default">
+  <world name="my_world">
 
     <include>
       <uri>model://ground_plane</uri>
@@ -46,9 +46,7 @@
     <model name="my_world">
       <static>1</static>
       <include>
-        <pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
-        <uri>model://cafe</uri>
-      </include>
+        <uri>model://cafe</uri>      </include>
     </model>
      
     <include>
@@ -105,6 +103,5 @@
         <uri>model://table</uri>
       </include>
     </model>
-
   </world>
 </sdf>

@@ -11,7 +11,7 @@
     </include>
 
     <scene>
-      <shadows>false</shadows>
+      <shadows>true</shadows>
     </scene>
 
     <gui fullscreen='0'>
@@ -44,9 +44,7 @@
     </physics>
 
     <model name="my_world">
-      <static>1</static>
       <include>
-        <pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
         <uri>model://cafe</uri>
       </include>
     </model>
