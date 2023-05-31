@@ -19,20 +19,20 @@ setup(
         (os.path.join('share', package_name, 'launch'), glob('launch/*.py')),  
         (os.path.join('share', package_name, 'config'), glob('config/*.lua')),
         (os.path.join('share', package_name, 'config'), glob('config/*.yaml')), 
-        (os.path.join('share', package_name, 'config'), glob('config/*.xml')) 
+        (os.path.join('share', package_name, 'config'), glob('config/*.xml')),
+        (os.path.join('share', package_name), glob('test/*.py'))         
         
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='jomdec@upv.es',
-    maintainer_email='jomdec@upv.es@todo.todo',
+    maintainer='asperez@upv.es',
+    maintainer_email='asperez@upv.es@todo.todo',
     description='TODO: Package description',
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
             'my_waypoints_follower = proy_jomdec_nav2_system.my_waypoints_follower:main',
-            'initial_pose_pub = proy_jomdec_nav2_system.initial_pose_pub:main'
         ],
     },
 )

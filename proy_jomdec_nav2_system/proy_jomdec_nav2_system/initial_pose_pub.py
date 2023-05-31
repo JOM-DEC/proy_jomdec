@@ -16,11 +16,23 @@ class Publisher(Node):
     def callback(self):
         msg = PoseWithCovarianceStamped()
         msg.header.frame_id = 'map'
-        msg.pose.pose.position.x = 0.2
-        msg.pose.pose.position.y = 0.0
-        msg.pose.pose.orientation.w = 1.0
+
+        x = 0.2
+        y = 0.0
+        o = 1.0
+
+        msg.pose.pose.position.x = x
+        msg.pose.pose.position.y = y
+        msg.pose.pose.orientation.w = o
+
+        position = self.position(x, y, o)
+
         self.get_logger().info('Publishing  Initial Position  \n X= 0.2 \n Y=0.0 \n W = 1.0 ')
         self.publisher_.publish(msg)
+
+    def position(self, x, y, o):
+        position = [x, y, o]
+        return position
 
 def main(args=None):
     rclpy.init(args=args)
