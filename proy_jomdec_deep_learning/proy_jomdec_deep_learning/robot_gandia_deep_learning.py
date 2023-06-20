@@ -19,7 +19,7 @@ class RobotGandiaDeepLearningNode(Node):
     def __init__(self):
         super().__init__('proy_jomdec_deep_learning')
         
-        self.edgeimpulse_model = '/home/jorge/jorge/turtlebot3_ws/src/proy_jomdec/proy_jomdec_deep_learning/proy_jomdec_deep_learning/edgeimpulse_model/FOMO_Model.eim'
+        self.edgeimpulse_model = '/home/davidgf/David/turtlebot3_ws/src/proy_jomdec/proy_jomdec_deep_learning/proy_jomdec_deep_learning/edgeimpulse_model/FOMO_Model_bottle_rgb.eim'
 
         # Subscriber
         
@@ -163,4 +163,3 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-
